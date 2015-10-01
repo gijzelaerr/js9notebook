@@ -7,12 +7,14 @@ STATIC = path.join(path.dirname(__file__), 'static')
 
 def initialize():
     from IPython.core.displaypub import publish_display_data
-    resources = {
-        'application/javascript': ('js9support.js', 'js9.js', 'js9plugins.js'),
-        'text/html': ('js9support.css', 'js9.css'),
-    }
+    js = ('js9support.js', 'js9.js', 'js9plugins.js')
+    css = ('js9support.css', 'js9.css')
 
-    for type_, files in resources.items():
-        for file_ in files:
-            data = open(path.join(STATIC, file_), 'rb').read()
-            publish_display_data(data={type_: data})
+    for file_ in js:
+        data = open(path.join(STATIC, file_), 'rb').read()
+        publish_display_data(data={'application/javascript': data})
+
+    for file_ in css:
+        data = open(path.join(STATIC, file_), 'r').read()
+        data = '<style>' + data + '</style>'
+        publish_display_data(data={'text/html': data})
