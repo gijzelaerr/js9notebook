@@ -4,6 +4,10 @@ js9notebook
 Embed JS9 (the javascript version of DS9 (the astronomical image viewer))
 inside Jupyter.
 
+[![Build Status](https://travis-ci.org/gijzelaerr/js9notebook.svg)](https://travis-ci.org/gijzelaerr/js9notebook)
+
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gijzelaerr/js9notebook?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 
 install
 =======
