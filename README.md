@@ -8,6 +8,16 @@ inside Jupyter.
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gijzelaerr/js9notebook?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+**note** For now this project doens't do much, I still need to figure out what is the best way to actually integrate JS9 into ipython. For the meanwhile you can already use JS9 in your notebook by copy pasting this code into a cell:
+
+```
+%%html
+<div class="JS9Menubar"></div>
+<div class="JS9"></div>
+<link type="text/css" rel="stylesheet" href="http://js9.si.edu/js9/js9-allinone.css">
+<script type="text/javascript" src="http://js9.si.edu/js9/js9-allinone.js"></script>
+```
+
 
 install
 =======
